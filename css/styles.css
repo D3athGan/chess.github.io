@@ -127,4 +127,14 @@
             background: transparent;
             min-width: 220px;
         }
+/* Подключение шрифтов */
+        @font-face {
+            font-family: 'Golos Text';
+            src: url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap');
+        }
+
+        @font-face {
+            font-family: 'Merriweather';
+            src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+        }
     </style>
