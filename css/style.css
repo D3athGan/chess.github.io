@@ -1,1 +1,136 @@
+/* === БАЗОВЫЕ НАСТРОЙКИ === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+  font-family: 'Golos Text', sans-serif;
+  color: #313131;
+  background-color: #F9F6F3;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* === HERO СЕКЦИЯ === */
+.hero {
+  background-image: url('texture-bg.jpg'); /* фон-бумага */
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .hero-content {
+  max-width: 620px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero .logo {
+  width: 260px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 18px 24px;
+  border-radius: 36px;
+  text-decoration: none;
+  min-width: 220px;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #1F1F1F;
+  color: #fff;
+}
+
+.btn.secondary {
+  border: 2px solid #1F1F1F;
+  color: #1F1F1F;
+  background: transparent;
+}
+
+/* фон с шахматами и зданиями */
+.hero-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 60%;
+  z-index: 1;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === БЕГУЩАЯ СТРОКА === */
+.ticker {
+  background-color: #F54932;
+  color: white;
+  font-weight: 500;
+  padding: 12px 0;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* === АДАПТИВ === */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-bg {
+    max-width: 100%;
+    opacity: 0.3;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+}
