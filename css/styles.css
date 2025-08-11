@@ -14,14 +14,14 @@ html,
 body {
   font-family: "Golos Text", sans-serif;
   color: #313131;
-  background-color: #f9f6f3;
+  background-color: #fff;
   line-height: 1.5;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1222px;
   margin: 0 auto;
-  padding: 0 16px;
+  /*padding: 0 16px;*/
   /*background-color: #fff;*/
 }
 
@@ -40,7 +40,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.85); /* светлый фильтр поверх картинки */
   z-index: -1;
 }
 
@@ -52,18 +51,19 @@ body {
 
 .logo {
   width: 245.17px;
-  margin-top: 55px;
+  margin-top: 26.5px;
 }
 
 h1 {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-size: 60px;
-  line-height: 1.1;
+  line-height: 1.13;
   margin-bottom: 24px;
-  max-width: 542px;
+  max-width: 560px;
   text-transform: uppercase;
-  margin: 62px 0 24px 0;
+  margin: 60px 0 17px 0;
+  letter-spacing: 1.3px;
 }
 
 .hero p {
@@ -149,9 +149,7 @@ h1 {
 
 
 
-  .hero p {
-    font-size: 16px;
-  }
+
 
   .cta-buttons {
     flex-direction: column;
@@ -183,6 +181,7 @@ h2 {
   font-size: 54px;
   font-weight: 500;
   color: #313131;
+  text-transform: uppercase;
 }
 
 .chess-card {
@@ -301,7 +300,7 @@ h2 {
 /* Дополнительные стили для карточек */
 .chess-card img {
   width: 100%;
-  max-width: 200px;
+    max-width: 320px;
   height: auto;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -491,10 +490,12 @@ h2 {
 }
 .h1-right {
   padding-left: 91px;
+  letter-spacing: 0.7px;
 }
 
 .h1-right-two {
   padding-left: 33px;
+  letter-spacing: 0.7px;
 }
 
 .hero-descr {
@@ -502,6 +503,8 @@ h2 {
   align-content: center;
   text-align: center;
   margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.3;
 }
 
 .hero-section {
@@ -509,7 +512,7 @@ h2 {
   background-repeat: no-repeat; 
   background-position: center; 
   /*background-size: cover; */
-  height: 700px;
+    height: 700px;
   /*background-color: #E4D6CA;*/
 }
 
@@ -525,10 +528,12 @@ h3 {
 
 .h3-span {
   color: #F54932;
+  letter-spacing: 0.7px;
 }
 
 .support {
-  margin-top: 107px;
+  margin-top: 71px;
+  letter-spacing: 0.33px;
 }
 
 .lecture {
@@ -565,8 +570,7 @@ display: flex;
   color: #313131;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 40px;
-  max-width: 704px;
+  margin-bottom: 25px;
 }
 
 .chess-session-title span {
@@ -604,7 +608,9 @@ display: flex;
 
 .chess-session-image {
   flex: 1;
-  max-width: 474px;
+  max-width: 526px;
+  margin-top: -40px;
+  margin-left: -25px;
 }
 
 .chess-session-image img {
@@ -715,12 +721,14 @@ display: flex;
   font-weight: regular;
   opacity: 70%;
   border-right: 1px solid #d0d0d0;
-  padding: 16px 0;
+    padding: 16px 14px 0px 16px;
+  font-size: 20px;
 }
 
 .info-value {
   color: #313131;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .old-price {
@@ -735,7 +743,8 @@ display: flex;
 
 
 .pic2 {
-  width: 609px;
+  max-width: 530px;
+
 }
 
 .black-text {
@@ -743,25 +752,17 @@ display: flex;
 }
 
 .chess-span {
-  color: #f54932;
+color: black;
   font-weight: 500;
   position: relative;
+  margin-left: -12px;
+  line-height: 1.35;
+  width: 720px;
 }
 
-.chess-span::before,
-.chess-span::after {
-  content: "И СЕАНС";
-  color: #313131;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
-.chess-span::after {
-  content: "ГРОССМЕЙСТЕРА О. БЕНДЕРА";
-  top: auto;
-  bottom: 0;
-}
+
+
 
 
 .info-table {
@@ -775,6 +776,7 @@ display: flex;
   border: none; 
   border-radius: 0;
   overflow: visible; 
+      margin-left: -40px;
 }
 
 .info-row {
@@ -783,8 +785,9 @@ display: flex;
 
 .info-label, 
 .info-value {
-  padding: 12px 16px; /* Отступы внутри ячеек */
+  padding: 16px 16px; /* Отступы внутри ячеек */
   border-bottom: 1px solid #D0D0D0; /* Граница между строками */
+  letter-spacing: 0.2px;
 }
 
 /* Убираем нижнюю границу у последней строки */
@@ -798,8 +801,8 @@ display: flex;
   white-space: nowrap;
   color: #313131;
   opacity: 70%;
-  background-color: #f5f5f5; /* Светлый фон для меток */
-  padding: 16px 0;
+
+  padding: 16px 16px;
 }
 
 .info-value {
@@ -879,6 +882,7 @@ display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 60px;
+      margin-top: 90px;
 }
 
 .stages-title {
@@ -919,7 +923,7 @@ display: flex;
   padding: 20px;
   font-weight: 500;
   background-image: url(../img/bg-item.jpg);
-min-height: 112px;
+min-height: 110px;
   max-height: 196px;
 }
 
@@ -984,15 +988,16 @@ stage-item stage-three
 .stages {
     padding: 80px 0;
     position: relative;
-    background-color: #F9F6F3;
+    background-color: #fff;
 }
 
 .stages-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     position: relative;
+    margin: 65px 0px 50px 0px;
 }
 
 .stages-title {
@@ -1018,7 +1023,8 @@ stage-item stage-three
     color: #3057A2;
     max-width: 280px;
     position: absolute;
-    top: 75px;
+top: 70px;
+    left: 300px;
 }
 
 .stages-list {
@@ -1093,9 +1099,43 @@ stage-item stage-three
 
 .stage-seven {
   grid-column: span 2;
-  min-height: 160px;
+
 }
 
 div.stage-item.stage-seven > div.stage-content {
   width: 410px;
+}
+.h3-one, .event-info {
+      margin-top: 10px;
+}
+
+.carousel-prev {
+  
+}
+
+.red-text {
+  color: #F54932;
+}
+
+.chess-session-title {
+  white-space: nowrap; /* Запрещаем перенос для всего заголовка */
+}
+
+.nowrap {
+  white-space: nowrap; /* Дополнительная защита для красного текста */
+}
+
+.chess-span {
+  width: auto; /* Убираем фиксированную ширину */
+  display: inline; /* Меняем на inline, если не нужны block-свойства */
+  margin-left: 0; /* Убираем отрицательный отступ */
+}
+.stage-plane {
+    position: absolute;
+    right: 420px;
+    /*top: 50%;*/
+  
+    transform: translateY(-50%);
+    width: 300px; 
+    height: auto;
 }
